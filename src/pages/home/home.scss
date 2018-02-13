@@ -1,0 +1,31 @@
+page-home {
+.input{
+    border: 1px solid $inputborder;
+}
+
+.functionButtons{
+  border: 1px solid $inputborder; 
+  margin-top: 10%;
+  width: 25%;
+  float: left;
+  button{ 
+    border-radius: 5px;
+    border: 4px solid $inputborder;
+    font-size: 4em;
+    width: 100%
+  }
+}
+
+.num_buttons{
+    border: 1px solid $inputborder; 
+    margin-top: 10%;
+    width: 70%;
+    float: right;
+  button{
+   border-radius: 1px;
+   border: 4px solid $inputborder;
+   font-size: 4em;
+   width: 90%;
+  }
+}
+}

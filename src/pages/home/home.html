@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+ <ion-title text-center>LUCAS CALCULATOR</ion-title>
+
+ <ion-label text-center stacked>type any number to begin</ion-label>
+ <ion-item  class='input'> {{input}} </ion-item>
+ <ion-item  class='input'> {{answer}} </ion-item>
+
+  
+    <ion-grid class='num_buttons'>
+      <ion-row>
+        <ion-col *ngFor='let i of numbers'>
+          <button (click)='Input(i)'>
+              {{i}}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+
+
+    <ion-grid class='functionButtons'>
+      <ion-row>
+       <ion-col *ngFor='let i of functions'>
+         <button (click)='Operation(i)'>
+          {{i}}
+         </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+</ion-content>
